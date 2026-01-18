@@ -12,7 +12,7 @@ body {
 
 /* NAVBAR */
 header {
-  background: #2b3958;
+  background: #1f293e;
   color: #fff;
   padding: 1rem 2rem;
    position: relative;
@@ -121,9 +121,9 @@ header {
   max-width: 1400px;
   margin: 0 auto;
   padding: 20px 10px;
-  background: #0f172a;
+  background:  #2b3958;
   padding: 10px;
-  box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+  box-shadow: 0 20px 40px  rgba(0, 0, 0, 0.08);
 }
 
 .gallery img {
@@ -321,3 +321,39 @@ footer {
   margin-top: 2rem;
 }
 
+
+/* MOBILE ADJUSTMENTS */
+@media (max-width: 768px) {
+  /* Gallery stays in a row on mobile */
+  .gallery {
+    flex-wrap: nowrap;         /* prevent stacking */
+    overflow-x: auto;          /* allow horizontal scroll */
+    -ms-overflow-style: none;  /* hide scrollbar IE/Edge */
+    scrollbar-width: none;     /* hide scrollbar Firefox */
+  }
+}
+
+  .gallery::-webkit-scrollbar {
+    display: none;             /* hide scrollbar Chrome/Safari */
+  }
+
+  .gallery img {
+    flex: 0 0 250px;           /* fixed width for each image */
+    height: 260px;             /* adjust height for mobile */
+  }
+
+  /* About section: keep image and text aligned at top */
+  .about-container {
+    grid-template-columns: 200px 1fr; /* smaller image on mobile */
+    padding: 10px;
+    gap: 15px;
+  }
+
+  .aboutimg {
+    height: 260
+  }
+
+  .blog{
+    background: #2b3958;
+    color:#e5e7eb;
+  }
