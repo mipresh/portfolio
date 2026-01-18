@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Mmesoma Precious Igwe | Frontend Developer</title>
+  <title>Mmesoma Precious Igwe | Web Developer</title>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css" />
 </head>
@@ -13,37 +13,66 @@
   <header>
     <nav class="navbar">
       <h1 class="logo">Mmesoma Precious Igwe</h1>
-      <ul class="nav-links">
+           <ul class="nav-links">
         <li><a href="#about">About</a></li>
         <li><a href="#projects">Projects</a></li>
         <li><a href="#skills">Skills</a></li>
         <li><a href="#contact">Contact</a></li>
+        <li><a href="blog.html" target="_blank" rel="noopener noreferrer">Blog</a>
+        <p></p>
+        </li>
       </ul>
     </nav>
+
+      <div class="hamburger" id="hamburger">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
   </header>
+
+ <div class="gallery">
+  <img src="./images/side-view-worker-typing-laptop.jpg" class="active" alt="laptop">
+   <img src="./images/mimi_web.png" class="fixed" alt="owner_picture">
+    <img src="./images/bachalpsee-7572681_1280.jpg" class="active" alt="nature_view">
+  </div>
+
+   
 
   <!-- HERO -->
   <section class="hero">
-    <h2>Frontend Developer</h2>
+    <h2>Web Developer</h2>
     <p>
-      I build responsive, user-friendly web applications using web
+      I build responsive, user-friendly website & applications using web
       technologies.
     </p>
+    <p> I help businesses and individuals build a website that beautifully convey message to their audience.</p>
     <a href="#projects" class="btn">View Projects</a>
   </section>
 
   <!-- ABOUT -->
   <section id="about" class="section">
-    <h2>About Me</h2>
-    <p>
-      I’m a passionate Frontend Developer with a strong foundation in building
-      responsive web designs and working with relational databases. I am
-      currently expanding my skills into backend development and API
-      integration, aiming to grow into a versatile full-stack developer.
+    <h2 padding="5px">About Me</h2>
+    <div class="about-container" id="about-container">
+<img src="./images/mmeso_website.jpg" class="aboutimg" alt="picture">
+<div class="about-text">
+I’m a passionate web Developer and a designer that enjoys creating clean, efficient, and user-friendly website, applications and web solution. I'm also always eager to learn new technologies inorder to keep learning, growing and adapting in the world of technologies thereby contribute to meaningful projects with the  foundation I have built responsive web designs and databases.</p>
+<br>
+<br>
+<br>
+<p>I currently major as a frontend developer with knowledge of backend work flow, SQL, Databases, API intergration. Git and GitHub for version control. My aim is to grow into a full stack developer, which is now in progress.</p>
+<p></p>
+<br>
+<br>
+<p>My Life  before tech has influence my analytical thinking, creativity and designing. From being a physics educator to beauty stylist, digital creator, visual and fine & applied artist. This experience has not only shaped me but also enhance my critical thinking and research skills towards web solutions.</p>  
+<p></p>
+<br>
+<br>
+ I earned certifications in Responsive Web Design and JavaScript, and I have built strong skills in HTML, CSS, and JavaScript, Git and GitHub with knowledge of React, SQL, database integration, and UI/UX design. I am currently learning backend development and API integration, and I am on my journey to becoming a full-stack developer.
+I am open to web developer and Web design, frontend, or entry full-stack roles, as well as internships, and collaborations where I can apply my skills, continue learning, and grow
     </p>
-    <p>
-     Before transitioning into tech, I worked as a physics educator, visual artist, stylist, and creative designer. These experiences helped me develop strong analytical thinking, problem-solving, research, and creative skills, which I now apply to building effective and user-centered web solutions.
-    </p>
+  </div>
+  </div>
   </section>
 
   <!-- PROJECTS -->
@@ -78,6 +107,42 @@
         <p><strong>Tech:</strong> JavaScript</p>
         <a href="#" target="_blank">GitHub</a>
       </div>
+
+       <div class="project-card">
+        <h3>Techinical Documentation page</h3>
+        <p><strong>Tech:</strong> CSS</p>
+        <a href="#" target="_blank">GitHub</a>
+      </div>
+
+      <div class="project-card">
+        <h3>Inventory Management Programme</h3>
+        <p><strong>Tech:</strong> JavaScript</p>
+        <a href="#" target="_blank">GitHub</a>
+      </div>
+
+      <div class="project-card">
+        <h3>Grade Book App</h3>
+        <p><strong>Tech:</strong> JavaScript</p>
+        <a href="#" target="_blank">GitHub</a>
+      </div>
+
+      <div class="project-card">
+        <h3>Story Telling App</h3>
+        <p><strong>Tech:</strong> JavaScript</p>
+        <a href="#" target="_blank">GitHub</a>
+      </div>
+
+      <div class="project-card">
+        <h3>A Voting System Illustration</h3>
+        <p><strong>Tech:</strong> JavaScript</p>
+        <a href="#" target="_blank">GitHub</a>
+      </div>
+
+      <div class="project-card">
+        <h3>Built A Flappy Penguin</h3>
+        <p><strong>Tech:</strong> JavaScript</p>
+        <a href="#" target="_blank">GitHub</a>
+      </div>
     </div>
   </section>
 
@@ -88,7 +153,7 @@
       <li>HTML5</li>
       <li>CSS3</li>
       <li>JavaScript (ES6)</li>
-      <li>React (Basic)</li>
+      <li>React</li>
       <li>UI & UX Design</li>
       <li>SQL & Relational Databases</li>
       <li>Git & GitHub</li>
@@ -99,16 +164,14 @@
 <section id="contact" class="section contact">
   <h2>Contact</h2>
   <p>
-    I’m open to web design, entry-level full-stack roles, internships, 
-    volunteer work, and collaborations.
-    <br>
+    
     🔗 <a href="https://linkedin.com/in/mmesoma-precious-igwe-944b95182/" target="_blank" rel="noopener">Connect on LinkedIn</a>
   </p>
 
   <form id="contactForm" class="contact-form">
     <input type="text" id="name" name="name" required placeholder="Name/Company" />
     <input type="email" id="email" name="email" required placeholder="Email" />
-    <textarea id="message" name="message" required placeholder="Message (Job offers, internships, collaborations)"></textarea>
+    <textarea id="message" name="message" required placeholder="Message (Job offers,collaborations)"></textarea>
     <button type="submit">Send Message</button>
 
     <p id="successMessage" class="form-message success">Your message has been sent! ✅</p>
