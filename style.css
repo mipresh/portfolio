@@ -93,6 +93,7 @@ html {
 
 
 @media (max-width: 768px) {
+
   .nav-links {
     position: fixed;
     top: 0px;
@@ -115,13 +116,17 @@ html {
     padding: 10px;
     border-radius: 6px;
   }
-
+   
   .hamburger {
   display: flex;
-  position: fixed;
-  right: 20px;
+  position: absolute;
+  right: 2rem;
+  top: 50%;
   transform: translateY(-50%);
+  z-index: 1001;
+  height: 50px;
 }
+
 
   .logo-img {
     width: 32px;
