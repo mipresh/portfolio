@@ -93,19 +93,25 @@ html {
 
 
 @media (max-width: 768px) {
-.nav-links {
-    position: absolute;
-    top: 70px;
+@media (max-width: 768px) {
+  .nav-links {
+    position: fixed;   /* keeps menu in place */
+    top: 0;
     right: 0;
     background: #0f172a;
     z-index: 999;
     flex-direction: column;
     width: 200px;
-    padding: 20px;
-    display: flex;
+    padding-top: 80px; /* space for header */
     transform: translateX(100%);
     transition: transform 0.3s ease;
   }
+
+  .nav-links.active {
+    transform: translateX(0);
+  }
+}
+
 
   .nav-links.active {
     transform: translateX(0);
@@ -116,13 +122,15 @@ html {
     border-radius: 6px;
   }
 
-  .hamburger {
+ .hamburger {
   display: flex;
-  position: absolute;
-  right: 2rem;
-  top: 50%;
-  transform: translateY(-50%);
+  flex-direction: column;
+  gap: 6px;
+  cursor: pointer;
+  z-index: 1000; /* above menu */
+  position: relative;
 }
+
 
   .logo-img {
     width: 32px;
@@ -389,10 +397,8 @@ footer {
     flex-direction: column;
     text-align: center;
   }
-   .header{
-    position: fixed;
-   }
    
+
   .aboutimg {
     max-width: 280px;
     height: auto;
