@@ -148,6 +148,7 @@ html {
 
 .hero h2 {
   font-size: 2.5rem;
+  line-height: 1.2;
 }
 
 .btn {
@@ -368,6 +369,11 @@ footer {
  /* MOBILE ADJUSTMENTS */
 @media (max-width: 768px) {
 
+    .hero h2 {
+    font-size: 1.9rem;
+    line-height: 1.25;
+    padding: 0 10px;
+  }
   .gallery {
     flex-wrap: wrap;
     overflow-x: hidden;
