@@ -33,34 +33,28 @@ document.addEventListener("DOMContentLoaded", () => {
 
   console.log("Portfolio website loaded successfully");
 
-  const galleryImages = document.querySelectorAll(".gallery img");
-  const leftRightImages = Array.from(galleryImages).filter(
-    img => !img.classList.contains("fixed")
-  );
+  const fadeImages = [
+  "./images/side-view-worker-typing-laptop.jpg",
+  "./images/laptop1.jpg"
+];
 
-  const imageSets = [
-    ["./images/side-view-worker-typing-laptop.jpg", "./images/bachalpsee-7572681_1280.jpg"],
-    ["./images/vecteezy_woman-working-business-paperwork-on-desk-office_3283872.jpg", "./images/side-view-worker-typing-laptop.jpg"]
-  ];
+const firstImg = document.querySelector(".gallery img.fade");
+let index = 0;
+const fadeInterval = 3000; // 3s for first image
 
-  let currentSet = 0;
+// Set initial image
+firstImg.src = fadeImages[index];
 
-  function showNextSet() {
-    currentSet = (currentSet + 1) % imageSets.length;
+setInterval(() => {
+  index = (index + 1) % fadeImages.length;
+  firstImg.style.opacity = 0;           // start fade out
 
-    leftRightImages.forEach((img, index) => {
-      img.classList.remove("active");
+  setTimeout(() => {
+    firstImg.src = fadeImages[index];   // change image
+    firstImg.style.opacity = 1;         // fade in
+  }, 500); // match half of transition duration
+}, fadeInterval);
 
-      setTimeout(() => {
-        img.src = imageSets[currentSet][index];
-        setTimeout(() => {
-          img.classList.add("active");
-        }, 50);
-      }, 500);
-    });
-  }
-
-  setInterval(showNextSet, 6000);
 
   const hamburger = document.getElementById("hamburger");
   const navLinks = document.querySelector(".nav-links");
