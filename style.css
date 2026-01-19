@@ -122,8 +122,8 @@ html {
   .hamburger {
   display: flex;
   position: relative;
-  right: 2rem;
-  top: 50%;
+  top: 22px;       
+  right: 24px;
   transform: translateY(-50%);
 }
 
