@@ -122,7 +122,10 @@ html {
   .hamburger {
   display: flex;
   position: relative;
+   right: 12px;       
+  top: 50%;
   transform: translateY(-50%);
+  z-index: 1001; 
 }
 
 
