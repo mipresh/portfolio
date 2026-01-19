@@ -81,7 +81,7 @@ html {
 }
 
 .logo-img {
-  width: 40px;     /* adjust size */
+  width: 40px;     
   height: 40px;
   object-fit: contain;
 }
@@ -93,25 +93,25 @@ html {
 
 
 @media (max-width: 768px) {
-@media (max-width: 768px) {
-  .nav-links {
-    position: fixed;   /* keeps menu in place */
+   header {
+    position: sticky;
     top: 0;
-    right: 0;
-    background: #0f172a;
-    z-index: 999;
-    flex-direction: column;
-    width: 200px;
-    padding-top: 80px; /* space for header */
-    transform: translateX(100%);
-    transition: transform 0.3s ease;
-  }
+    z-index: 1000;
+    padding: 1rem 1.2rem;
+   }
 
-  .nav-links.active {
-    transform: translateX(0);
-  }
+ .nav-links {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background: #0f172a;
+  z-index: 999;
+  flex-direction: column;
+  width: 200px;
+  padding-top: 70px;
+  transform: translateX(110%);
+  transition: transform 0.4s ease;
 }
-
 
   .nav-links.active {
     transform: translateX(0);
@@ -127,8 +127,8 @@ html {
   flex-direction: column;
   gap: 6px;
   cursor: pointer;
-  z-index: 1000; /* above menu */
-  position: relative;
+  z-index: 1000; 
+  position: absolute;
 }
 
 
