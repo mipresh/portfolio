@@ -110,6 +110,15 @@ html {
   transition: transform 0.3s ease;
  }
 
+   .hamburger {
+  display: flex;
+  position: relative;
+   right: 12px;       
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 1000; 
+}
+ 
   .nav-links.active {
     transform: translateX(0);
   }
@@ -118,15 +127,6 @@ html {
     padding: 10px;
     border-radius: 6px;
   }
-
-  .hamburger {
-  display: flex;
-  position: relative;
-   right: 12px;       
-  top: 50%;
-  transform: translateY(-50%);
-  z-index: 1001; 
-}
 
 
   .logo-img {
