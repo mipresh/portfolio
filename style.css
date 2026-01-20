@@ -100,7 +100,7 @@ html {
    }
 
  .nav-links { 
-  position:absolute;  
+  position: fixed;  
   top: 100%;              
   right: 0;
   display: flex; 
