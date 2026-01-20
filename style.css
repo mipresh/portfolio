@@ -114,7 +114,7 @@ html {
 
    .hamburger {
   display: flex;
-  position: relative;
+  position: absolute;
    right: 12px;       
   top: 50%;
   transform: translateY(-50%);
