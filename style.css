@@ -94,13 +94,13 @@ html {
 
 @media (max-width: 768px) {
    header {
-    position: relative;
+    position: sticky;
     top: 0;
     
    }
 
  .nav-links { 
-  position:absolute;  
+  position:fixed;  
   top: 100%;              
   right: 0;
   display: flex; 
@@ -118,7 +118,7 @@ html {
    right: 12px;       
   top: 50%;
   transform: translateY(-50%);
-  z-index: 1001; 
+  z-index: 1002; 
 }
  
 .navbar {
