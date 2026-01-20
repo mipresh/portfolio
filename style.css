@@ -101,8 +101,8 @@ html {
 
  .nav-links { 
   position:fixed;  
-  top: 100%;              
-  right: 0;
+   top: 70px;
+    right: 0;
   display: flex; 
  background: #0f172a; 
  z-index: 999; 
@@ -118,7 +118,7 @@ html {
    right: 12px;       
   top: 50%;
   transform: translateY(-50%);
-  z-index: 1002; 
+  z-index: 1001; 
 }
  
 .navbar {
