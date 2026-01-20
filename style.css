@@ -100,7 +100,9 @@ html {
    }
 
  .nav-links { 
-  position: fixed;  
+  position:absolute;  
+  top: 100%;              
+  right: 0;
   display: flex; 
  background: #0f172a; 
  z-index: 999; 
@@ -112,13 +114,17 @@ html {
 
    .hamburger {
   display: flex;
-  position: relative;
+  position:absolute;
    right: 12px;       
   top: 50%;
   transform: translateY(-50%);
   z-index: 1000; 
 }
  
+.navbar {
+  position: relative;
+}
+
   .nav-links.active {
     transform: translateX(0);
   }
