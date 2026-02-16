@@ -31,31 +31,7 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 
-  console.log("Portfolio website loaded successfully");
-
-  const fadeImages = [
-  "./images/side-view-worker-typing-laptop.jpg",
-  "./images/laptop1.jpg"
-];
-
-const firstImg = document.querySelector(".gallery img.fade");
-let index = 0;
-const fadeInterval = 3000; // 3s for first image
-
-// Set initial image
-firstImg.src = fadeImages[index];
-
-setInterval(() => {
-  index = (index + 1) % fadeImages.length;
-  firstImg.style.opacity = 0;           // start fade out
-
-  setTimeout(() => {
-    firstImg.src = fadeImages[index];   // change image
-    firstImg.style.opacity = 1;         // fade in
-  }, 500); // match half of transition duration
-}, fadeInterval);
-
-
+ 
   const hamburger = document.getElementById("hamburger");
   const navLinks = document.querySelector(".nav-links");
 
@@ -72,3 +48,34 @@ setInterval(() => {
   }
 
 });
+
+
+const scrollContainer = document.getElementById("scrollContainer");
+const leftBtn = document.getElementById("leftBtn");
+const rightBtn = document.getElementById("rightBtn");
+
+rightBtn.addEventListener("click", () => {
+  scrollContainer.scrollBy({ left: 350, behavior: "smooth" });
+});
+
+leftBtn.addEventListener("click", () => {
+  scrollContainer.scrollBy({ left: -350, behavior: "smooth" });
+});
+
+
+const revealElements = document.querySelectorAll(".reveal-up");
+
+function revealOnScroll() {
+  revealElements.forEach(el => {
+    const windowHeight = window.innerHeight;
+    const elementTop = el.getBoundingClientRect().top;
+
+    if (elementTop < windowHeight - 100) {
+      el.classList.add("active");
+    }
+  });
+}
+
+window.addEventListener("scroll", revealOnScroll);
+
+ console.log("Portfolio website loaded successfully");

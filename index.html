@@ -21,11 +21,12 @@
 
      
     <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
       <li><a href="#about">About</a></li>
       <li><a href="#projects">Projects</a></li>
       <li><a href="#skills">Skills</a></li>
       <li><a href="#contact">Contact</a></li>
-      <li><a href="blog.html" target="_blank" rel="noopener noreferrer">Blog</a></li>
+      <li><a href="blog.html">Blog</a></li>
     </ul>
 
       <div class="hamburger" id="hamburger">
@@ -36,132 +37,185 @@
   </nav>
   </header> 
 
- <div class="gallery">
-  <img src="./images/side-view-worker-typing-laptop.jpg" class="fade" alt="laptop">
-  <img src="./images/mimi_web.png" class="fixed" alt="owner_picture">
+
+      <!-- HERO -->
+<section class="hero">
+  <div class="hero-container">
+
+    <!-- LEFT IMAGE -->
+    <div class="hero-image">
+ <img src="./images/mimi_web.png" alt="my Picture">
+    </div>
+
+    <!-- RIGHT TEXT -->
+    <div class="hero-text">
+      <h1> I'm <span>Mmesoma precious</span></h1>
+      <h2 class="typing">Web Developer</h2>
+      <p>
+        I build fast, responsive and scalable web applications
+        that help businesses grow.
+      </p>
+
+      <div class="buttons">
+        <a href="#projects" class="btn primary">View My Work</a>
+        <a href="#contact" class="btn secondary">Contact Me</a>
+      </div>
+    </div>
+
   </div>
+</section>
 
    
 
-  <!-- HERO -->
-  <section class="hero">
-    <h2>I'm a Web Developer</h2>
+  <!-- ABOUT -->
+<section id="about" class="section reveal-up">
+    <h2>About Me</h2>
     <p>
-      I build responsive, user-friendly website & applications using web
+    
+    <p>
+     I'm a full stack web developer.</p>
+     <p> I build responsive, user-friendly website & applications using web
       technologies.
     </p>
     <p> I help businesses and individuals build a website that beautifully convey message to their audience.</p>
-    <a href="#projects" class="btn">View Projects</a>
-  </section>
-
-  <!-- ABOUT -->
-  <section id="about" class="section">
-    <h2>About Me</h2>
-    <div class="about-container">
-<div class="about-text">
-I’m a passionate web Developer and a designer that enjoys creating clean, efficient, and user-friendly website, applications and web solution. I'm also always eager to learn new technologies inorder to keep, growing and adapting in the world of technologies thereby contribute to meaningful projects with the  foundation I have built in responsive web designs and databases.</p>
-
-<p>I currently major as a frontend developer with knowledge of backend work flow, SQL, Databases, API intergration. Git and GitHub for version control. My aim is to grow into a full stack developer, which is now in progress.</p>
-
-<p>My Life  before tech has influence my analytical thinking, creativity and designing. From being a physics educator to beauty stylist, digital creator, visual and fine & applied artist. This experience has not only shaped me but also enhance my critical thinking and research skills towards web solutions.</p>  
-
- I earned certifications in Responsive Web Design and JavaScript, and I have built strong skills in HTML, CSS, and JavaScript, Git and GitHub with knowledge of React, SQL, database integration, and UI/UX design. I am currently learning backend development and API integration, and I am on my journey to becoming a full-stack developer.
-I am open to web developer and Web design, frontend, or entry full-stack roles, and collaborations where I can apply my skills, continue learning, and grow.
     </p>
+    <p>I'm also always eager to learn new technologies inoder to keep growing and adapting in the world of technologies thereby contribute to meaningful projects. </p>
+   <p>I have built strong foundation in building responsive web designs and databases.</p>
+   <p>My life before tech has influence my analytical thinking, creativity and designing from being a physics educator, stylist, digital creator , appilied artist to being a web developer.</p>
+   <p>This experience has enhance my critical thinking and willingness to grow. </p>
+   </section>
+
+<section id="projects" class="section">
+  <h2>My Projects</h2>
+
+  <div class="scroll-wrapper">
+
+    <button class="scroll-btn left" id="leftBtn">&#10094;</button>
+
+    <div class="projects-scroll" id="scrollContainer">
+
+      <div class="project-card">
+        <img src="./images/City-Weather.png">
+        <h3>Weather App</h3>
+        <div class="links">
+          <a href="https://mipresh.github.io/WeatherApp/">Live</a>
+          <a href="#">GitHub</a>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <img src="./images/Royal-family-school.png">
+        <h3>School System</h3>
+         <p>School management system with backend API deployment.</p>
+        <div class="links">
+          <a href="https://royalfamilyschool.onrender.com">Live</a>
+          <a href="https://github.com/mipresh/Royalfamilyschoolbackend">GitHub</a>
+        </div>
+      </div>
+
+         <div class="project-card">
+        <img src="./images/TodoApp.png">
+        <h3>Todo App</h3>
+        <div class="links">
+          <a href="https://mipresh.github.io/TodoApp/">Live</a>
+          <a href="#">GitHub</a>
+        </div>
+      </div>
+  
+
+      <div class="project-card">
+        <img src="./images/bank-account.png">
+        <h3>Bank App</h3>
+        <div class="links">
+          <a href="#">Live</a>
+          <a href="#">GitHub</a>
+        </div>
+      </div>
+
+    </div>
+
+    <button class="scroll-btn right" id="rightBtn">&#10095;</button>
+
   </div>
-  </div>
-  </section>
+</section>
 
-  <!-- PROJECTS -->
-  <section id="projects" class="section">
-    <h2>Projects</h2>
 
-    <div class="projects-grid">
-      <div class="project-card">
-        <h3>Responsive Portfolio</h3>
-        <p>Personal responsive portfolio website.</p>
-        <p><strong>Tech:</strong> HTML, CSS, JavaScript</p>
-        <a href="#" target="_blank">GitHub</a>
+
+ <!-- SKILLS -->
+<section id="skills" class="section reveal-up">
+  <h2>My Skills</h2>
+
+  <div class="skills-grid">
+
+    <div class="skill-card">
+      <h3>Frontend</h3>
+      <div class="skill">
+        <p>HTML</p>
+        <div class="progress"><span style="width: 95%"></span></div>
       </div>
 
-      <div class="project-card">
-        <h3>OTP Verification App</h3>
-        <p>OTP generation and verification system.</p>
-        <p><strong>Tech:</strong> HTML, CSS, JavaScript</p>
-        <a href="#" target="_blank">GitHub</a>
+      <div class="skill">
+        <p>CSS</p>
+        <div class="progress"><span style="width: 90%"></span></div>
       </div>
 
-      <div class="project-card">
-        <h3>To-Do App</h3>
-        <p>Task manager with local storage.</p>
-        <p><strong>Tech:</strong> JavaScript</p>
-        <a href="#" target="_blank">GitHub</a>
-      </div>
-
-      <div class="project-card">
-        <h3>Form validation</h3>
-        <p>Online Form Validation .</p>
-        <p><strong>Tech:</strong> JavaScript</p>
-        <a href="#" target="_blank">GitHub</a>
-      </div>
-
-       <div class="project-card">
-        <h3>Techinical Documentation page</h3>
-        <p><strong>Tech:</strong> CSS</p>
-        <a href="#" target="_blank">GitHub</a>
-      </div>
-
-      <div class="project-card">
-        <h3>Inventory Management Programme</h3>
-        <p><strong>Tech:</strong> JavaScript</p>
-        <a href="#" target="_blank">GitHub</a>
-      </div>
-
-      <div class="project-card">
-        <h3>Grade Book App</h3>
-        <p><strong>Tech:</strong> JavaScript</p>
-        <a href="#" target="_blank">GitHub</a>
-      </div>
-
-      <div class="project-card">
-        <h3>Story Telling App</h3>
-        <p><strong>Tech:</strong> JavaScript</p>
-        <a href="#" target="_blank">GitHub</a>
-      </div>
-
-      <div class="project-card">
-        <h3>A Voting System Illustration</h3>
-        <p><strong>Tech:</strong> JavaScript</p>
-        <a href="#" target="_blank">GitHub</a>
-      </div>
-
-      <div class="project-card">
-        <h3>Built A Flappy Penguin</h3>
-        <p><strong>Tech:</strong> HTML, CSS</p>
-        <a href="#" target="_blank">GitHub</a>
+      <div class="skill">
+        <p>JavaScript</p>
+        <div class="progress"><span style="width: 85%"></span></div>
       </div>
     </div>
-  </section>
 
-  <!-- SKILLS -->
-  <section id="skills" class="section">
-    <h2>Skills</h2>
-    <ul class="skills-list">
-      <li>HTML5</li>
-      <li>CSS3</li>
-      <li>JavaScript (ES6)</li>
-      <li>React</li>
-      <li>UI & UX Design</li>
-      <li>SQL & Relational Databases</li>
-      <li>Git & GitHub</li>
-       <li>API integration</li>
-    </ul>
-  </section>
+  
+    <div class="skill-card">
+      <h3>Backend</h3>
+      <div class="skill">
+        <p>Node.js</p>
+        <div class="progress"><span style="width: 80%"></span></div>
+      </div>
 
- <!-- CONTACT -->
-<section id="contact" class="section contact">
-  <h2>Contact</h2>
-  <p>
+      <div class="skill">
+        <p>Express</p>
+        <div class="progress"><span style="width: 75%"></span></div>
+      </div>
+
+      <div class="skill">
+        <p>MongoDB</p>
+        <div class="progress"><span style="width: 70%"></span></div>
+      </div>
+    </div>
+
+    <div class="skill-card">
+      <h3>Tools</h3>
+      <div class="skill">
+        <p>Git & GitHub</p>
+        <div class="progress"><span style="width: 85%"></span></div>
+      </div>
+
+      <div class="skill">
+        <p>Render</p>
+        <div class="progress"><span style="width: 80%"></span></div>
+      </div>
+
+      <div class="skill">
+        <p>VS Code</p>
+        <div class="progress"><span style="width: 90%"></span></div>
+      </div>
+    </div>
+
+ <div class="skills-grid">
+
+    <div class="skill-card">
+      <h3>Frontend</h3>
+      <div class="skill">
+        <p>React</p>
+        <div class="progress"><span style="width: 60%"></span></div>
+      </div>
+      </div>
+
+    
+  <!-- CONTACT -->
+  <section id="contact" class="section fade-in">
+    <h2>Get In Touch</h2>
     
     🔗 <a href="https://linkedin.com/in/mmesoma-precious-igwe-944b95182/" target="_blank" rel="noopener">Connect on LinkedIn</a>
   </p>
@@ -177,6 +231,8 @@ I am open to web developer and Web design, frontend, or entry full-stack roles, 
   </form>
 </section>
 
+  </div>
+</section>
 
 
   <footer>
@@ -185,5 +241,5 @@ I am open to web developer and Web design, frontend, or entry full-stack roles, 
   </footer>
 
   <script src="script.js"></script>
-</body>
+
 </html>
