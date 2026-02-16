@@ -391,23 +391,8 @@ nav a:hover {
   max-width: 500px;
 }
 
-/* RESPONSIVE */
-@media (max-width: 900px) {
-  .hero-container {
-    flex-direction: column;
-    text-align: center;
-  }
 
-  .hero-text {
-    margin-top: 40px;
-  }
-}
 
-@keyframes gradient {
-  0% { background-position: 0% 50%; }
-  50% { background-position: 100% 50%; }
-  100% { background-position: 0% 50%; }
-}
 
 
 
@@ -537,7 +522,9 @@ nav a:hover {
   background: #1e293b;
   border-radius: 20px;
   overflow: hidden;
-  width: 380px;
+  width: 320px;
+  flex-shrink: 0;
+
   transition: 0.4s ease;
 }
 
@@ -595,7 +582,7 @@ nav a:hover {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  background: none;
+  background: rgb(91, 154, 225);
   border: none;
   color: white;
   font-size: 30px;
@@ -730,4 +717,53 @@ nav a:hover {
 .reveal-up.active {
   opacity: 1;
   transform: translateY(0);
+}
+
+/* MOBILE RESPONSIVE HERO */
+@media (max-width: 900px) {
+
+  .hero {
+    padding: 120px 20px 60px;
+    min-height: auto;
+  }
+
+  .hero-container {
+    flex-direction: column;
+    text-align: center;
+    gap: 30px;
+  }
+
+  .hero-image img {
+    width: 220px;
+    height: 220px;
+  }
+
+  .hero-text {
+    margin-top: 10px;
+  }
+
+  .hero-text h1 {
+    font-size: 2rem;
+    line-height: 1.2;
+  }
+
+  .hero-text h2 {
+    font-size: 1.2rem;
+  }
+
+  .hero-text p {
+    font-size: 0.95rem;
+    max-width: 100%;
+  }
+
+  .buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+  }
+
+  .btn {
+    width: 200px;
+  }
 }
