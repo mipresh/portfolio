@@ -1,10 +1,11 @@
 document.addEventListener("DOMContentLoaded", () => {
 
+  /* FORM */
   const form = document.getElementById("contactForm");
   const successMessage = document.getElementById("successMessage");
   const errorMessage = document.getElementById("errorMessage");
 
-  if (form) {
+   if (form) {
     form.addEventListener("submit", async (e) => {
       e.preventDefault();
 
@@ -31,60 +32,51 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 
- 
-const burger = document.getElementById("hamburger");
-const nav = document.getElementById("navLinks");
 
-burger.addEventListener("click", ()=>{
-  nav.classList.toggle("active");
-});
-
-
- 
+  /* HAMBURGER */
   const hamburger = document.getElementById("hamburger");
   const navLinks = document.querySelector(".nav-links");
 
-  if (hamburger && navLinks) {
-    hamburger.addEventListener("click", () => {
+  if(hamburger && navLinks){
+    hamburger.addEventListener("click", ()=>{
+      hamburger.classList.toggle("active");
       navLinks.classList.toggle("active");
-    });
-
-    document.querySelectorAll(".nav-links a").forEach(link => {
-      link.addEventListener("click", () => {
-        navLinks.classList.remove("active");
-      });
     });
   }
 
-});
+
+  /* SCROLL BUTTONS */
+  const scrollContainer = document.getElementById("scrollContainer");
+  const leftBtn = document.getElementById("leftBtn");
+  const rightBtn = document.getElementById("rightBtn");
+
+  if(scrollContainer && leftBtn && rightBtn){
+
+    rightBtn.addEventListener("click", ()=>{
+      scrollContainer.scrollBy({ left:350, behavior:"smooth" });
+    });
+
+    leftBtn.addEventListener("click", ()=>{
+      scrollContainer.scrollBy({ left:-350, behavior:"smooth" });
+    });
+
+  }
 
 
-const scrollContainer = document.getElementById("scrollContainer");
-const leftBtn = document.getElementById("leftBtn");
-const rightBtn = document.getElementById("rightBtn");
+  /* SCROLL REVEAL */
+  const observer = new IntersectionObserver(entries=>{
+    entries.forEach(entry=>{
+      if(entry.isIntersecting){
+        entry.target.classList.add("active");
+      }
+    });
+  },{ threshold:0.2 });
 
-rightBtn.addEventListener("click", () => {
-  scrollContainer.scrollBy({ left: 350, behavior: "smooth" });
-});
-
-leftBtn.addEventListener("click", () => {
-  scrollContainer.scrollBy({ left: -350, behavior: "smooth" });
-});
-
-
-const revealElements = document.querySelectorAll(".reveal-up");
-
-function revealOnScroll() {
-  revealElements.forEach(el => {
-    const windowHeight = window.innerHeight;
-    const elementTop = el.getBoundingClientRect().top;
-
-    if (elementTop < windowHeight - 100) {
-      el.classList.add("active");
-    }
+  document.querySelectorAll(".reveal-up").forEach(el=>{
+    observer.observe(el);
   });
-}
 
-window.addEventListener("scroll", revealOnScroll);
 
- console.log("Portfolio website loaded successfully");
+  console.log("Portfolio website loaded successfully");
+
+});
