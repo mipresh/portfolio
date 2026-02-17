@@ -734,18 +734,6 @@ nav a:hover {
   .hero-text {
     margin-top: 40px;
   }
-
-    .hero-text h1{
-    font-size:2.2rem;
-  }
-
-  .hero-text h2{
-    font-size:1.2rem;
-  }
-
-  .hero-text p{
-    margin:auto;
-  }
 }
 
 /* RESPONSIVE */
@@ -766,7 +754,7 @@ nav a:hover {
   }
 
   .project-card{
-    min-width:90%;
+    min-width:95%;
     margin:auto;
   }
 
