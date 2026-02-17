@@ -384,9 +384,7 @@ nav a:hover {
   object-fit: cover;
   border: 8px solid rgba(255,255,255,0.2);
   box-shadow: 0 0 40px rgba(56,189,248,0.6);
- animation: float 4s ease-in-out infinite;
-will-change: transform;
-
+  animation: float 4s ease-in-out infinite;
 }
 
 @keyframes float {
@@ -756,7 +754,7 @@ will-change: transform;
   }
 
   .project-card{
-    min-width:100%;
+    width:100%;
     margin:auto;
   }
 
@@ -820,38 +818,7 @@ will-change: transform;
 }
 
 
-@media (max-width:768px){
 
-  body{
-    padding-top:70px; /* prevents overlap */
-  }
-
-  .hero{
-    min-height:auto;
-  }
-
-  section{
-    scroll-margin-top:80px;
-  }
-
-}
-
-
-@media (max-width:768px){
-
-  .navbar{
-    z-index:99999;
-  }
-
-  .hero,
-  .section,
-  .projects-scroll,
-  .skills-grid{
-    z-index:1;
-    position:relative;
-  }
-
-}
 
 
 
