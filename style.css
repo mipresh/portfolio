@@ -734,6 +734,18 @@ nav a:hover {
   .hero-text {
     margin-top: 40px;
   }
+
+    .hero-text h1{
+    font-size:2.2rem;
+  }
+
+  .hero-text h2{
+    font-size:1.2rem;
+  }
+
+  .hero-text p{
+    margin:auto;
+  }
 }
 
 /* RESPONSIVE */
@@ -747,6 +759,21 @@ nav a:hover {
     width: 140px;
     height: 140px;
   }
+
+   .projects-scroll{
+    padding:20px 10px;
+    gap:20px;
+  }
+
+  .project-card{
+    min-width:90%;
+    margin:auto;
+  }
+
+  .project-card img{
+    height:180px;
+  }
+
 }
 
 
