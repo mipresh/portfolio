@@ -17,8 +17,20 @@ html {
   align-items: center;
   justify-content: space-between;
   padding: 0 8%;
-  z-index: 1000;
+  z-index: 9999;
 }
+
+.navbar{
+  position:fixed;
+  top:0;
+  z-index:9999;
+}
+
+section{
+  position:relative;
+  z-index:1;
+}
+
 
 /* LINKS DESKTOP */
 .nav-links {
@@ -330,7 +342,9 @@ nav {
   align-items: center;
   background: rgba(15, 23, 42, 0.8);
   backdrop-filter: blur(10px);
-  z-index: 1000;
+  top:0;
+  z-index:9999;
+
 }
 
 nav ul {
