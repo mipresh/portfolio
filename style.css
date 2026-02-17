@@ -53,9 +53,13 @@ html {
   transition: all 0.3s ease;
 }
 
-
-
-
+.hamburger{
+  display:none;
+  flex-direction:column;
+  gap:6px;
+  cursor:pointer;
+  z-index:1100;
+}
 
 .hamburger span{
   width:25px;
@@ -65,60 +69,16 @@ html {
   transition:0.4s ease;
 }
 
-/* Default - hide on desktop */
-.hamburger {
-  display: none;
-  flex-direction: column;
-  gap: 6px;
-  cursor: pointer;
-  z-index: 1100;
-}
-
-.hamburger span {
-  width: 25px;
-  height: 3px;
-  background: white;
-  border-radius: 3px;
-  transition: 0.4s ease;
-}
-
-/* Hamburger open animation */
 .hamburger.active span:nth-child(1){
-  transform: rotate(45deg) translate(5px,5px);
+  transform:rotate(45deg) translate(5px,5px);
 }
 
 .hamburger.active span:nth-child(2){
-  opacity: 0;
+  opacity:0;
 }
 
 .hamburger.active span:nth-child(3){
-  transform: rotate(-45deg) translate(7px,-6px);
-}
-
-/* Show hamburger on mobile */
-@media (max-width: 768px){
-  .hamburger {
-    display: flex !important; /* important forces override */
-  }
-
-  .nav-links {
-    position: fixed;
-    top: 70px;
-    left: 0;
-    width: 100%;
-    background: #020617;
-    flex-direction: column;
-    align-items: center;
-    gap: 25px;
-    padding: 30px 0;
-    transform: translateY(-150%);
-    transition: 0.45s ease;
-    z-index: 100; /* make sure nav links under header but above page */
-  }
-
-  .nav-links.active {
-    transform: translateY(0);
-  }
+  transform:rotate(-45deg) translate(7px,-6px);
 }
 
 
@@ -149,8 +109,32 @@ html {
 
 
 
+@media (max-width:768px){
 
+  .hamburger{
+    display:flex;
+  }
 
+  .nav-links{
+    position: fixed;
+    top:70px;
+    left:0;
+    width:100%;
+    background:#020617;
+
+    flex-direction:column;
+    align-items:center;
+    gap:25px;
+    padding:30px 0;
+
+    transform:translateY(-150%);
+    transition:0.45s ease;
+  }
+
+  .nav-links.active{
+    transform:translateY(0);
+  }
+}
 
   .logo-img {
     width: 32px;
@@ -673,10 +657,10 @@ nav a:hover {
   }
 
   .project-card {
-    width:250px;
+   width: 300px;
     margin: auto;
   }
-
+  
 }
 
 /* RESPONSIVE */
@@ -827,6 +811,5 @@ nav a:hover {
 
 
 
-
-
-
+.navbar{ z-index:99999 !important; }
+section{ z-index:1; position:relative; }
