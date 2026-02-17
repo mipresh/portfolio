@@ -742,10 +742,7 @@ nav a:hover {
   .hero h1 {
     font-size: 2rem;
   }
-   .project-card{
-    width:100%;
-   }
-   
+
   .profile-container {
     width: 140px;
     height: 140px;
@@ -755,6 +752,57 @@ nav a:hover {
 }
 
 
+
+
+
+/* MOBILE RESPONSIVE HERO */
+@media (max-width: 900px) {
+
+  .hero {
+    padding: 120px 20px 60px;
+    min-height: auto;
+  }
+
+  .hero-container {
+    flex-direction: column;
+    text-align: center;
+    gap: 30px;
+  }
+
+  .hero-image img {
+    width: 220px;
+    height: 220px;
+  }
+
+  .hero-text {
+    margin-top: 10px;
+  }
+
+  .hero-text h1 {
+    font-size: 2rem;
+    line-height: 1.2;
+  }
+
+  .hero-text h2 {
+    font-size: 1.2rem;
+  }
+
+  .hero-text p {
+    font-size: 0.95rem;
+    max-width: 100%;
+  
+}
+  .buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .btn {
+    width: 200px;
+  }
+}
 
 
 
