@@ -648,21 +648,7 @@ nav a:hover {
 .project-card:hover {
   transform: translateY(-10px);
 }
-
-
-@media (max-width:768px){
-  .projects-scroll {
-    padding: 20px;
-    gap: 15px;
-  }
-
-  .project-card {
-   width: 300px;
-    margin: auto;
-  }
   
-}
-
 /* RESPONSIVE */
 @media (max-width: 900px) {
   .hero-container {
