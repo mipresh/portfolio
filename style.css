@@ -806,6 +806,100 @@ nav a:hover {
 
 
 
+/* =========================
+   MOBILE RESPONSIVE
+========================= */
+
+@media (max-width: 900px){
+
+  /* SECTION PADDING */
+  .section{
+    padding:80px 6%;
+  }
+
+  /* HERO LAYOUT */
+  .hero{
+    padding:120px 6% 60px;
+    text-align:center;
+  }
+
+  .hero-container{
+    flex-direction:column;
+    gap:40px;
+  }
+
+  /* HERO IMAGE */
+  .hero-image img{
+    width:220px;
+    height:220px;
+  }
+
+  /* HERO TEXT */
+  .hero-text h1{
+    font-size:2.2rem;
+  }
+
+  .hero-text h2{
+    font-size:1.2rem;
+  }
+
+  .hero-text p{
+    margin:auto;
+  }
+
+  /* PROJECT SCROLL AREA */
+  .projects-scroll{
+    padding:20px 10px;
+    gap:20px;
+  }
+
+  .project-card{
+    min-width:85%;
+    margin:auto;
+  }
+
+  .project-card img{
+    height:180px;
+  }
+
+  /* HIDE ARROWS ON MOBILE */
+  .scroll-btn{
+    display:none;
+  }
+
+  /* SKILLS */
+  .skills-grid{
+    flex-direction:column;
+    align-items:center;
+  }
+
+  .skill-card{
+    width:100%;
+    max-width:400px;
+  }
+}
+
+
+/* =========================
+   SMALL PHONE FIX
+========================= */
+
+@media (max-width:500px){
+
+  .hero-text h1{
+    font-size:1.8rem;
+  }
+
+  .hero-image img{
+    width:180px;
+    height:180px;
+  }
+
+  .project-card{
+    min-width:92%;
+  }
+
+}
 
 
 
