@@ -116,7 +116,7 @@ html {
   }
 
   .nav-links{
-    position: fixed;
+    position: absolute;
     top:70px;
     left:0;
     width:100%;
@@ -539,6 +539,20 @@ nav a:hover {
   max-width: 500px;
 }
 
+/* CARD */
+.project-card {
+  min-width: 300px;
+  background: #1e293b;
+  border-radius: 20px;
+  padding: 20px;
+  text-align: center;
+  transition: 0.4s;
+}
+
+.project-card:hover {
+  transform: translateY(-10px);
+}
+
 .projects-grid {
   display: flex;
   gap: 40px;
@@ -547,13 +561,8 @@ nav a:hover {
   margin-top: 60px;
 }
 
-.project-card {
-  background: #1e293b;
-  border-radius: 20px;
-  overflow: hidden;
-  width: 300px;
-  transition: 0.4s ease;
-}
+
+
 
 .project-card img {
   width: 100%;
@@ -635,20 +644,9 @@ nav a:hover {
   right: 10px;
 }
 
-/* CARD */
-.project-card {
-  min-width: 300px;
-  background: #1e293b;
-  border-radius: 20px;
-  padding: 20px;
-  text-align: center;
-  transition: 0.4s;
-}
 
-.project-card:hover {
-  transform: translateY(-10px);
-}
-  
+
+
 /* RESPONSIVE */
 @media (max-width: 900px) {
   .hero-container {
@@ -797,5 +795,7 @@ nav a:hover {
 
 
 
-.navbar{ z-index:99999 !important; }
-section{ z-index:1; position:relative; }
+
+
+
+
