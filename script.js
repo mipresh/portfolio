@@ -47,6 +47,20 @@ document.addEventListener("DOMContentLoaded", () => {
  
 
 
+const scrollContainer = document.getElementById("scrollContainer");
+const leftBtn = document.getElementById("leftBtn");
+const rightBtn = document.getElementById("rightBtn");
+
+rightBtn.addEventListener("click", () => {
+  scrollContainer.scrollBy({ left: 350, behavior: "smooth" });
+});
+
+leftBtn.addEventListener("click", () => {
+  scrollContainer.scrollBy({ left: -350, behavior: "smooth" });
+});
+
+
+
 
 
   /* SCROLL REVEAL */
