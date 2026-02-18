@@ -810,7 +810,7 @@ nav a:hover {
 @media (max-width: 900px){
 
   /* SECTION PADDING */
-  section{
+  .section{
     padding:80px 6%;
     position: relative;
   }
@@ -851,9 +851,6 @@ nav a:hover {
      background: rgb(91, 154, 225);
      color:white;
   }
-  .scroll-btn:hover {
-  background: #0ea5e9;
-}
   
   .projects-scroll{
     padding:20px 10px;

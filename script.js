@@ -35,13 +35,14 @@ document.addEventListener("DOMContentLoaded", () => {
 
   /* HAMBURGER */
   const hamburger = document.getElementById("hamburger");
-/* CLOSE MENU WHEN LINK CLICKED */
-document.querySelectorAll(".nav-links a").forEach(link => {
-  link.addEventListener("click", () => {
-    hamburger.classList.remove("active");
-    navLinks.classList.remove("active");
-  });
-});
+  const navLinks = document.querySelector(".nav-links");
+
+  if(hamburger && navLinks){
+    hamburger.addEventListener("click", ()=>{
+      hamburger.classList.toggle("active");
+      navLinks.classList.toggle("active");
+    });
+  }
 
 
 
