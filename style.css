@@ -736,6 +736,73 @@ nav a:hover {
   }
 }
 
+/* RESPONSIVE */
+@media(max-width:768px) {
+ 
+  .hero h1 {
+    font-size: 2rem;
+  }
+
+  .profile-container {
+    width: 140px;
+    height: 140px;
+  }
+}
+
+
+
+
+
+/* MOBILE RESPONSIVE HERO */
+@media (max-width: 900px) {
+
+  .hero {
+    padding: 120px 20px 60px;
+    min-height: auto;
+  }
+
+  .hero-container {
+    flex-direction: column;
+    text-align: center;
+    gap: 30px;
+  }
+
+  .hero-image img {
+    width: 220px;
+    height: 220px;
+  }
+
+  .hero-text {
+    margin-top: 10px;
+  }
+
+  .hero-text h1 {
+    font-size: 2rem;
+    line-height: 1.2;
+  }
+
+  .hero-text h2 {
+    font-size: 1.2rem;
+  }
+
+  .hero-text p {
+    font-size: 0.95rem;
+    max-width: 100%;
+  
+}
+  .buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .btn {
+    width: 200px;
+  }
+}
+
+
 /* =========================
    MOBILE RESPONSIVE
 ========================= */
@@ -745,7 +812,7 @@ nav a:hover {
   /* SECTION PADDING */
   .section{
     padding:80px 6%;
-    position:relative;
+    position: relative;
   }
 
   /* HERO LAYOUT */
@@ -777,8 +844,14 @@ nav a:hover {
   .hero-text p{
     margin:auto;
   }
-
+   
+ 
   /* PROJECT SCROLL AREA */
+   .scroll-btn{
+     background: rgb(91, 154, 225);
+     color:white;
+  }
+  
   .projects-scroll{
     padding:20px 10px;
     gap:20px;
@@ -831,6 +904,15 @@ nav a:hover {
   }
 
 }
+
+
+
+
+
+
+
+
+
 
 
 

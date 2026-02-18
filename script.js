@@ -45,38 +45,12 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 
 
-  /* SCROLL BUTTONS */
-  const scrollContainer = document.getElementById("scrollContainer");
-  const leftBtn = document.getElementById("leftBtn");
-  const rightBtn = document.getElementById("rightBtn");
-
-  if(scrollContainer && leftBtn && rightBtn){
-
-    rightBtn.addEventListener("click", ()=>{
-      scrollContainer.scrollBy({ left:350, behavior:"smooth" });
-    });
-
-    leftBtn.addEventListener("click", ()=>{
-      scrollContainer.scrollBy({ left:-350, behavior:"smooth" });
-    });
-
-  }
 
 
-  /* SCROLL REVEAL */
-  const observer = new IntersectionObserver(entries=>{
-    entries.forEach(entry=>{
-      if(entry.isIntersecting){
-        entry.target.classList.add("active");
-      }
-    });
-  },{ threshold:0.2 });
-
-  document.querySelectorAll(".reveal-up").forEach(el=>{
-    observer.observe(el);
-  });
 
 
+
+  
   console.log("Portfolio website loaded successfully");
 
 });
