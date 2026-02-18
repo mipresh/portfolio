@@ -2,6 +2,7 @@
 
 html {
   scroll-behavior: smooth;
+
 }
 
 
@@ -846,10 +847,7 @@ nav a:hover {
    
  
   /* PROJECT SCROLL AREA */
-   .scroll-btn{
-     background: rgb(91, 154, 225);
-     color:white;
-  }
+
   
   .projects-scroll{
     padding:20px 10px;
@@ -865,10 +863,21 @@ nav a:hover {
     height:180px;
   }
 
-  /* HIDE ARROWS ON MOBILE */
+    
+
+  @media(max-width:768px){
+
   .scroll-btn{
-    display:none;
+    width:38px;
+    height:38px;
+    font-size:18px;
+    opacity:0.9;
   }
+
+  .left{ left:5px; }
+  .right{ right:5px; }
+
+}
 
   /* SKILLS */
   .skills-grid{
