@@ -48,9 +48,20 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
 
+  /* SCROLL REVEAL */
+  const observer = new IntersectionObserver(entries=>{
+    entries.forEach(entry=>{
+      if(entry.isIntersecting){
+        entry.target.classList.add("active");
+      }
+    });
+  },{ threshold:0.2 });
+
+  document.querySelectorAll(".reveal-up").forEach(el=>{
+    observer.observe(el);
+  });
 
 
-  
   console.log("Portfolio website loaded successfully");
 
 });
