@@ -2,7 +2,6 @@
 
 html {
   scroll-behavior: smooth;
-  scroll-padding-top: 80px;
 }
 
 
@@ -17,9 +16,8 @@ html {
   align-items: center;
   justify-content: space-between;
   padding: 0 8%;
-  z-index: 9999;
+  z-index: 1000;
 }
-
 
 /* LINKS DESKTOP */
 .nav-links {
@@ -322,7 +320,17 @@ body {
 }
 
 /* NAVBAR */
-
+nav {
+  position: fixed;
+  width: 100%;
+  padding: 20px 10%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: rgba(15, 23, 42, 0.8);
+  backdrop-filter: blur(10px);
+  z-index: 1000;
+}
 
 nav ul {
   list-style: none;
