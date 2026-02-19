@@ -20,6 +20,8 @@ html {
   z-index: 1000;
 }
 
+
+
 /* LINKS DESKTOP */
 .nav-links {
   display: flex;
@@ -319,20 +321,7 @@ body {
   color: white;
   overflow-x: hidden;
 }
-
-/* NAVBAR */
-nav {
-  position: fixed;
-  width: 100%;
-  padding: 20px 10%;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background: rgba(15, 23, 42, 0.8);
-  backdrop-filter: blur(10px);
-  z-index: 1000;
-}
-
+  
 nav ul {
   list-style: none;
   display: flex;
@@ -863,7 +852,7 @@ nav a:hover {
     height:180px;
   }
 
-    
+
 
   @media(max-width:768px){
   .scroll-btn{
@@ -916,8 +905,8 @@ nav a:hover {
 
 
 
-section {
-  scroll-margin-top: 80px; /* same height as your navbar */
-}
+
+
+
 
 

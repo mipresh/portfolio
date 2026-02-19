@@ -34,30 +34,35 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
   /* HAMBURGER */
-  const hamburger = document.getElementById("hamburger");
-  const navLinks = document.querySelector(".nav-links");
+const hamburger = document.querySelector(".hamburger");
+const navLinks = document.querySelector(".nav-links");
 
-  if(hamburger && navLinks){
-    hamburger.addEventListener("click", ()=>{
-      hamburger.classList.toggle("active");
-      navLinks.classList.toggle("active");
-    });
-  }
-
- 
+if (hamburger && navLinks){
+  hamburger.addEventListener("click", () => {
+    hamburger.classList.toggle("active");
+    navLinks.classList.toggle("active");
+  });
+}
 
 
-const scrollContainer = document.getElementById("scrollContainer");
-const leftBtn = document.getElementById("leftBtn");
-const rightBtn = document.getElementById("rightBtn");
-
-rightBtn.addEventListener("click", () => {
-  scrollContainer.scrollBy({ left: 350, behavior: "smooth" });
+document.querySelectorAll(".nav-links a").forEach(link => {
+  link.addEventListener("click", () => {
+    hamburger.classList.remove("active");
+    navLinks.classList.remove("active");
+  });
 });
 
-leftBtn.addEventListener("click", () => {
-  scrollContainer.scrollBy({ left: -350, behavior: "smooth" });
-});
+if (scrollContainer && rightBtn && leftBtn){
+  const scrollAmount = scrollContainer.clientWidth * 0.8;
+
+  rightBtn.addEventListener("click", () => {
+    scrollContainer.scrollBy({ left: scrollAmount, behavior: "smooth" });
+  });
+
+  leftBtn.addEventListener("click", () => {
+    scrollContainer.scrollBy({ left: -scrollAmount, behavior: "smooth" });
+  });
+}
 
 
 
