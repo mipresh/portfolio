@@ -916,19 +916,8 @@ nav a:hover {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+section {
+  scroll-margin-top: 80px; /* same height as your navbar */
+}
 
 
