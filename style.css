@@ -2,12 +2,12 @@
 
 html {
   scroll-behavior: smooth;
-  scroll-padding-top: 90px;
 }
 
-.section{
-  scroll-margin-top:90px;
-}
+
+
+
+
 
 /* NAVBAR */
 .navbar {
@@ -20,7 +20,7 @@ html {
   align-items: center;
   justify-content: space-between;
   padding: 0 8%;
-  z-index: 1000;
+  z-index: 99999;
 }
 
 
@@ -460,8 +460,7 @@ nav a:hover {
 .section {
   padding: 100px 10%;
   text-align: center;
-  position: relative;
-  z-index: 1;
+  position: relative;;
 }
 
 
@@ -592,8 +591,8 @@ nav a:hover {
 
 .scroll-wrapper{
   position:relative;
-  z-index:1;
 }
+
 
 
 /* SCROLL AREA */
