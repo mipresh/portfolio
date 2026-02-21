@@ -33,8 +33,7 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 
 
-  /* HAMBURGER */
-const hamburger = document.getElementById("hamburger");
+ const hamburger = document.getElementById("hamburger");
 const navLinks = document.getElementById("navLinks");
 
 let menuTimeout;
@@ -51,11 +50,9 @@ hamburger.addEventListener("click", () => {
     menuTimeout = setTimeout(() => {
       navLinks.classList.remove("active");
       hamburger.classList.remove("active");
-    }, 4000); 
+    }, 4000);
   }
 });
-
-
 
 
 if (scrollContainer && rightBtn && leftBtn){
