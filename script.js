@@ -34,23 +34,29 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
   /* HAMBURGER */
-const hamburger = document.querySelector(".hamburger");
-const navLinks = document.querySelector(".nav-links");
+const hamburger = document.getElementById("hamburger");
+const navLinks = document.getElementById("navLinks");
 
-if (hamburger && navLinks){
-  hamburger.addEventListener("click", () => {
-    hamburger.classList.toggle("active");
-    navLinks.classList.toggle("active");
-  });
-}
+let menuTimeout;
 
+hamburger.addEventListener("click", () => {
+  navLinks.classList.toggle("active");
+  hamburger.classList.toggle("active");
 
-document.querySelectorAll(".nav-links a").forEach(link => {
-  link.addEventListener("click", () => {
-    hamburger.classList.remove("active");
-    navLinks.classList.remove("active");
-  });
+  // clear previous timer if user clicks again
+  clearTimeout(menuTimeout);
+
+  // only start timer if menu is open
+  if (navLinks.classList.contains("active")) {
+    menuTimeout = setTimeout(() => {
+      navLinks.classList.remove("active");
+      hamburger.classList.remove("active");
+    }, 4000); 
+  }
 });
+
+
+
 
 if (scrollContainer && rightBtn && leftBtn){
   const scrollAmount = scrollContainer.clientWidth * 0.8;
