@@ -912,3 +912,29 @@ nav a:hover {
 
 
 
+
+
+.visit-btn{
+  margin-top:10px;
+  background:#541e1e;
+  color:white;
+  border:none;
+  padding:8px 14px;
+  border-radius:6px;
+  cursor:pointer;
+}
+
+.project-details{
+  display:none;
+  margin-top:15px;
+}
+
+.project-details img{
+  width:100%;
+  border-radius:8px;
+  margin-bottom:10px;
+}
+
+.project-details.active{
+  display:block;
+}
