@@ -63,17 +63,7 @@ hamburger.addEventListener("click", () => {
 });
 
 
-if (scrollContainer && rightBtn && leftBtn){
-  const scrollAmount = scrollContainer.clientWidth * 0.8;
 
-  rightBtn.addEventListener("click", () => {
-    scrollContainer.scrollBy({ left: scrollAmount, behavior: "smooth" });
-  });
-
-  leftBtn.addEventListener("click", () => {
-    scrollContainer.scrollBy({ left: -scrollAmount, behavior: "smooth" });
-  });
-}
 
 
 
