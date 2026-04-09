@@ -63,10 +63,33 @@ hamburger.addEventListener("click", () => {
 });
 
 
+const modal = document.getElementById("projectModal");
 
+document.addEventListener("click", function(e) {
 
+  // ✅ ONLY OPEN WHEN BUTTON IS CLICKED
+  if (e.target.classList.contains("view-btn")) {
 
+    const card = e.target.closest(".project-card");
 
+    modal.classList.add("active");
+
+    document.getElementById("modalImg").src = card.dataset.img;
+    document.getElementById("modalTitle").textContent = card.dataset.title;
+    document.getElementById("modalDesc").textContent = card.dataset.desc;
+    document.getElementById("modalProblem").textContent = "Problem: " + card.dataset.problem;
+    document.getElementById("modalSolution").textContent = "Solution: " + card.dataset.solution;
+  document.getElementById("modalTech").textContent = "Tech Stack: " + card.dataset.tech;
+  
+    document.getElementById("modalLive").href = card.dataset.live;
+    document.getElementById("modalGithub").href = card.dataset.github;
+  }
+
+  // ✅ CLOSE MODAL
+  if (e.target.classList.contains("close-btn") || e.target === modal) {
+    modal.classList.remove("active");
+  }
+});
 
 
   /* SCROLL REVEAL */

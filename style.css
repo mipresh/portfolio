@@ -864,27 +864,94 @@ nav a:hover {
 
 
 
-.visit-btn{
-  margin-top:10px;
-  background:#541e1e;
-  color:white;
-  border:none;
-  padding:8px 14px;
-  border-radius:6px;
-  cursor:pointer;
+.project-details {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.4s ease;
 }
 
-.project-details{
-  display:none;
-  margin-top:15px;
+.project-card.active .project-details {
+  max-height: 500px;
 }
 
-.project-details img{
-  width:100%;
-  border-radius:8px;
-  margin-bottom:10px;
+.visit-btn {
+  margin-top: 10px;
+  background: #541e1e;
+  color: white;
+  border: none;
+  padding: 8px 14px;
+  border-radius: 6px;
+  cursor: pointer;
 }
 
-.project-details.active{
-  display:block;
+
+/* MODAL BACKGROUND */
+.project-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.8);
+  display: none;
+  justify-content: center;
+  align-items: center;
+  z-index: 99999;
+}
+
+/* SHOW MODAL */
+.project-modal.active {
+  display: flex;
+}
+
+/* MODAL BOX */
+.modal-content {
+  background: #1e293b;
+  padding: 25px;
+  border-radius: 20px;
+  width: 90%;
+  max-width: 500px;
+  text-align: center;
+  animation: popUp 0.3s ease;
+}
+
+@keyframes popUp {
+  from {
+    transform: scale(0.8);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+.modal-content img {
+  width: 100%;
+  border-radius: 12px;
+  margin-bottom: 15px;
+}
+
+.modal-links {
+  margin-top: 15px;
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+.modal-links a {
+  padding: 10px 15px;
+  background: #0ea5e9;
+  color: white;
+  border-radius: 8px;
+  text-decoration: none;
+}
+
+/* CLOSE BUTTON */
+.close-btn {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  font-size: 30px;
+  cursor: pointer;
 }
