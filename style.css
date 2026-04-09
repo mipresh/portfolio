@@ -414,7 +414,7 @@ nav a:hover {
 
 
 
-.typing {
+//.typing {
   margin: 10px 0;
   font-size: 1.5rem;
   border-right: 3px solid white;
@@ -876,7 +876,7 @@ nav a:hover {
 
 .visit-btn {
   margin-top: 10px;
-  background: #541e1e;
+  background: #171616;
   color: white;
   border: none;
   padding: 8px 14px;
