@@ -254,8 +254,18 @@ body::before{
   font-size:3rem;
   margin-bottom:50px;
   font-weight:800;
+  color:#fff;
 }
 
+@media (max-width:768px){
+
+  .section h2{
+    text-align:center;
+    font-size:2.3rem;
+    margin-bottom:35px;
+  }
+
+}
 
 /* =========================
     new HERO
@@ -1028,3 +1038,39 @@ footer{
   line-height:1.7;
 }
 
+
+
+/* Tablet */
+@media (max-width: 992px){
+  .logo-text{
+    font-size:1rem;
+  }
+}
+
+/* Mobile */
+@media (max-width:768px){
+  .logo-text{
+    font-size:0.9rem;
+  }
+
+  .logo-img{
+    width:36px;
+    height:36px;
+  }
+}
+
+/* Small phones */
+@media (max-width:480px){
+  .logo-text{
+    font-size:0.8rem;
+  }
+
+  .logo-wrap{
+    gap:8px;
+  }
+
+  .logo-img{
+    width:32px;
+    height:32px;
+  }
+}
