@@ -360,19 +360,57 @@ to{
 /* =========================
    TABLET
 ========================= */
+/* =========================
+   TABLET
+========================= */
 
-@media (max-width:991px){
+@media (min-width:769px) and (max-width:1024px){
 
     .hero-container{
-        padding:0 6%;
+        height:600px;
+        padding:80px 5% 0;
+        justify-content:center;
+    }
+
+    .hero-slider{
+        position:absolute;
+        inset:0;
+        height:100%;
+    }
+
+    .slide img{
+        width:100%;
+        height:100%;
+        object-fit:cover;
+        object-position:center;
+    }
+
+    .overlay{
+        background:rgba(4,11,17,.35);
+    }
+
+    .hero-content{
+        position:relative;
+        z-index:2;
+        max-width:700px;
+        margin:auto;
+        text-align:center;
     }
 
     .hero-content h1{
         font-size:3.8rem;
+        line-height:1.1;
+    }
+
+    .hero-content p{
+        font-size:1.15rem;
+    }
+
+    .visit-btn{
+        margin:auto;
     }
 
 }
-
 
 
 /* =========================
@@ -384,21 +422,26 @@ to{
     .hero-container{
         display:flex;
         flex-direction:column;
-        justify-content:flex-start;
         align-items:center;
+        justify-content:flex-start;
 
-        height:auto;
         min-height:100vh;
+        height:auto;
 
-        padding:80px 0 40px;
+        padding-top:80px;   /* navbar height */
+        padding-bottom:40px;
+        padding-left:0;
+        padding-right:0;
     }
 
-    /* Image starts below navbar */
+    /* Fixed height for every slide */
 
     .hero-slider{
         position:relative;
         width:100%;
-        height:55vh;
+        height:360px;       /* same height for all images */
+        overflow:hidden;
+        flex-shrink:0;
     }
 
     .slide{
@@ -407,43 +450,31 @@ to{
     }
 
     .slide img{
+        width:100%;
+        height:100%;
         object-fit:cover;
-        object-position:top center;
+        object-position:center top;
     }
 
     .overlay{
         display:none;
     }
 
-    /* Text below image */
-
     .hero-content{
         position:relative;
         width:100%;
-        max-width:100%;
-
+        padding:35px 24px 0;
         text-align:center;
-
-        padding:35px 25px 0;
     }
 
     .hero-content h1{
         font-size:2.8rem;
-        line-height:1.15;
-        margin-bottom:15px;
+        line-height:1.1;
     }
 
     .hero-content p{
         font-size:1rem;
-        margin-bottom:25px;
     }
-
-    .visit-btn{
-        display:inline-block;
-        width:220px;
-        margin:auto;
-    }
-
 }
 
 /* =========================
@@ -453,24 +484,11 @@ to{
 @media (max-width:480px){
 
     .hero-slider{
-        height:45vh;
-    }
-
-    .hero-content{
-        padding:25px 20px 0;
+        height:300px;
     }
 
     .hero-content h1{
         font-size:2.2rem;
-    }
-
-    .hero-content p{
-        font-size:.95rem;
-    }
-
-    .visit-btn{
-        width:100%;
-        max-width:220px;
     }
 
 }
