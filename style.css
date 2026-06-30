@@ -140,7 +140,7 @@ body::before{
    HERO
 ========================= */
 
-.hero{
+.hero-blog{
   min-height:100vh;
   display:flex;
   align-items:center;
@@ -148,7 +148,7 @@ body::before{
   padding:120px 8% 80px;
 }
 
-.hero-container{
+.hero-container-blog{
   display:grid;
   grid-template-columns:1fr 1fr;
   align-items:center;
@@ -355,6 +355,144 @@ to{
     color:#d1d5db;
     line-height:1.8;
     margin-bottom:35px;
+}
+
+/* =========================
+   TABLET
+========================= */
+
+@media (max-width:991px){
+
+    .hero-container{
+        padding:0 6%;
+    }
+
+    .hero-content h1{
+        font-size:3.8rem;
+    }
+
+}
+
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width:768px){
+
+    .hero-container{
+        display:flex;
+        flex-direction:column;
+        justify-content:flex-start;
+        align-items:center;
+
+        height:auto;
+        min-height:100vh;
+
+        padding:80px 0 40px;
+    }
+
+    /* Image starts below navbar */
+
+    .hero-slider{
+        position:relative;
+        width:100%;
+        height:55vh;
+    }
+
+    .slide{
+        position:absolute;
+        inset:0;
+    }
+
+    .slide img{
+        object-fit:cover;
+        object-position:top center;
+    }
+
+    .overlay{
+        display:none;
+    }
+
+    /* Text below image */
+
+    .hero-content{
+        position:relative;
+        width:100%;
+        max-width:100%;
+
+        text-align:center;
+
+        padding:35px 25px 0;
+    }
+
+    .hero-content h1{
+        font-size:2.8rem;
+        line-height:1.15;
+        margin-bottom:15px;
+    }
+
+    .hero-content p{
+        font-size:1rem;
+        margin-bottom:25px;
+    }
+
+    .visit-btn{
+        display:inline-block;
+        width:220px;
+        margin:auto;
+    }
+
+}
+
+/* =========================
+   SMALL PHONES
+========================= */
+
+@media (max-width:480px){
+
+    .hero-slider{
+        height:45vh;
+    }
+
+    .hero-content{
+        padding:25px 20px 0;
+    }
+
+    .hero-content h1{
+        font-size:2.2rem;
+    }
+
+    .hero-content p{
+        font-size:.95rem;
+    }
+
+    .visit-btn{
+        width:100%;
+        max-width:220px;
+    }
+
+}
+
+/* =========================
+   VERY SMALL PHONES
+========================= */
+
+@media (max-width:360px){
+
+    .hero-slider{
+        height:40vh;
+    }
+
+    .hero-content h1{
+        font-size:1.9rem;
+    }
+
+    .hero-content p{
+        font-size:.9rem;
+    }
+
 }
 
 /* =========================
@@ -872,6 +1010,3 @@ footer{
   line-height:1.7;
 }
 
-.cta-btn{
-  background-color:#2c7652
-}
